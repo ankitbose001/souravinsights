@@ -13,16 +13,16 @@
 .circle-action-btn__icon {
   color: white;
   font-size: 1.8em;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  -webkit-animation: hand-shake 2s infinite;
-          animation: hand-shake 2s infinite;
+  -webkit-transform-origin: bottom corner;
+          transform-origin: bottom corner;
+  -webkit-animation: hand-shake 3s infinite;
+          animation: hand-shake 3s infinite;
 }
 
 @-webkit-keyframes hand-shake {
   0% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    -webkit-transform: rotate(-11deg);
+            transform: rotate(-11deg);
   }
   25% {
     -webkit-transform: rotate(15deg);
@@ -79,8 +79,8 @@
     box-shadow: 0px 2px 5px #888888;
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(2.1);
+            transform: scale(2.1);
     box-shadow: 0px 6px 10px #888888;
   }
 }
