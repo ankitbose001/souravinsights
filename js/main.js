@@ -18,7 +18,7 @@
     	$("#loader").fadeOut("slow", function(){
 
         // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+        $("#preloader").delay(200).fadeOut("fast");
 
       });       
 
@@ -30,7 +30,7 @@
   	------------------------------------------------------ */
   	setTimeout(function() {
 
-   	$('#intro h1').fitText(1, { minFontSize: '42px', maxFontSize: '84px' });
+   	$('#intro h1').fitText(1, { minFontSize: '40px', maxFontSize: '84px' });
 
   	}, 100);
 
@@ -60,14 +60,14 @@
 	/* Alert Boxes
   	------------------------------------------------------- */
 	$('.alert-box').on('click', '.close', function() {
-	  $(this).parent().fadeOut(500);
+	  $(this).parent().fadeOut(400);
 	});	
 
 
 	/*----------------------------------------------------- */
 	/* Stat Counter
   	------------------------------------------------------- */
-   var statSection = $("#stats"),
+   var statSection = $("#count"),
        stats = $(".stat-count");
 
    statSection.waypoint({
@@ -83,7 +83,7 @@
 				   	duration: 4000,
 				   	easing: 'swing',
 				   	step: function (curValue) {
-				      	$this.text(Math.ceil(curValue));
+				      	$this.text(Mathoth.ceil(curValue));
 				    	}
 				  	});
 				});
@@ -109,7 +109,7 @@
 
 		containerProjects.masonry( {		  
 		  	itemSelector: '.folio-item',
-		  	resize: true 
+		  	resize: false 
 		});
 
 	});
